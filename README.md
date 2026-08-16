@@ -16,11 +16,9 @@ Edit `src/config.js` for the download URL and support email.
 
 ## GitHub Pages
 
-This repo deploys with GitHub Actions (`.github/workflows/pages.yml`).
+This repo deploys with GitHub Actions (`.github/workflows/pages.yml`). The workflow tries to enable Pages automatically. If deploy still 404s, set **Settings → Pages → Source** to **GitHub Actions** once, then re-run the workflow.
 
-1. Repo **Settings → Pages → Source** → **GitHub Actions**
-2. Push to `main` (or run the workflow manually)
-3. After the first successful deploy, **Settings → Pages → Custom domain** should already be `work-buddy.anthonyng.me` (from `public/CNAME`). Turn on **Enforce HTTPS** once DNS has verified.
+After the first successful deploy, **Settings → Pages → Custom domain** should already be `work-buddy.anthonyng.me` (from `public/CNAME`). Turn on **Enforce HTTPS** once DNS has verified.
 
 ## Namecheap DNS
 
