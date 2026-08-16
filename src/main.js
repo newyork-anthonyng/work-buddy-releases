@@ -3,16 +3,16 @@ import "./styles.css";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const workFrames = ["/animations/work/00.png", "/animations/work/01.png"];
+const workFrames = ["./animations/work/00.png", "./animations/work/01.png"];
 const restFrames = [
-  "/animations/rest/00.png",
-  "/animations/rest/01.png",
-  "/animations/rest/02.png",
-  "/animations/rest/03.png",
+  "./animations/rest/00.png",
+  "./animations/rest/01.png",
+  "./animations/rest/02.png",
+  "./animations/rest/03.png",
 ];
 const campFrames = [
-  "/animations/celebrate/00.png",
-  "/animations/celebrate/01.png",
+  "./animations/celebrate/00.png",
+  "./animations/celebrate/01.png",
 ];
 
 const loopBeats = [
