@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy policy — Work Buddy</title>
+    <meta
+      name="description"
+      content="What Work Buddy collects on your Mac, what leaves the Mac, and how to reach us."
+    />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="/icon.png" alt="" width="22" height="22" />
+          Work Buddy
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+        >
+          <span></span>
+        </button>
+        <nav class="nav" id="site-nav" data-nav-panel>
+          <a href="/#how">How it works</a>
+          <a href="/privacy.html" aria-current="page">Privacy</a>
+          <a href="/#faq">FAQ</a>
+          <a
+            class="btn"
+            data-download="label"
+            href="https://github.com/newyork-anthonyng/work-buddy-releases/releases/latest/download/Work.Buddy_0.1.0_aarch64.dmg"
+            >Download for Mac</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <article class="prose wrap">
+        <h1>Privacy policy</h1>
+        <p class="updated">Last updated August 16, 2026</p>
+        <p>
+          Work Buddy is a Mac app for focused work sessions. It can observe
+          whether you are at the screen and which app is in front. This page
+          describes that in plain language. We only make claims that match the
+          current app.
+        </p>
+
+        <h2>What stays on your Mac</h2>
+        <p>
+          Session history, settings, optional session goals, and the names of
+          apps you use are stored in a local SQLite database on this Mac.
+        </p>
+        <p>
+          Eye tracking uses the camera to tell if you are looking at the screen.
+          Video is processed on the device and is not saved. Eye tracking is
+          optional.
+        </p>
+        <p>
+          Active-app tracking notes the name of the app in front only, including
+          while you work in other apps. It does not store window titles, screen
+          contents, or keystrokes.
+        </p>
+
+        <h2>What is never recorded</h2>
+        <ul>
+          <li>Screen contents</li>
+          <li>Keystrokes</li>
+          <li>Camera video (it is not written to disk)</li>
+        </ul>
+
+        <h2>What leaves your Mac</h2>
+        <p>
+          If analytics are enabled, Work Buddy sends two anonymous events to
+          PostHog: <code>session_started</code> and
+          <code>session_completed</code>.
+        </p>
+        <p>Those events can include:</p>
+        <ul>
+          <li>Session index (first session, second session, and so on)</li>
+          <li>Whether the session completed normally</li>
+          <li>Planned, actual, and focused duration</li>
+          <li>Focus percentage</li>
+          <li>Whether a goal was set (not the goal text)</li>
+          <li>Whether eye tracking was enabled</li>
+          <li>Work rhythm and sessions-per-day settings</li>
+          <li>App version and platform (macOS)</li>
+        </ul>
+        <p>
+          Goals, the names of apps you use, and camera video are not sent.
+          Session recording, autocapture, and surveys are turned off in the
+          analytics client.
+        </p>
+
+        <h2>Permissions</h2>
+        <p>
+          macOS will ask for camera access if you enable eye tracking. The
+          prompt explains that video is processed on this Mac and is not saved.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this policy or the app:
+          <a data-email="text" href="mailto:newyork.anthonyng@gmail.com"
+            >newyork.anthonyng@gmail.com</a
+          >.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p class="legal">© 2026 Work Buddy</p>
+        <nav>
+          <a href="/#how">How it works</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/#faq">FAQ</a>
+          <a data-email="text" href="mailto:newyork.anthonyng@gmail.com"
+            >newyork.anthonyng@gmail.com</a
+          >
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

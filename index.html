@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Buddy — Your work moves you forward</title>
+    <meta
+      name="description"
+      content="Work Buddy quietly tracks your focused work and moves your hiker forward. A Mac app for starting, and finishing, focused sessions."
+    />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <meta property="og:title" content="Work Buddy" />
+    <meta
+      property="og:description"
+      content="Your work moves you forward. A Mac app where focused work makes a hiker climb."
+    />
+    <meta property="og:image" content="/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="/icon.png" alt="" width="22" height="22" />
+          Work Buddy
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+        >
+          <span></span>
+        </button>
+        <nav class="nav" id="site-nav" data-nav-panel>
+          <a href="#how">How it works</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="#faq">FAQ</a>
+          <a
+            class="btn"
+            data-download="label"
+            href="https://github.com/newyork-anthonyng/work-buddy-releases/releases/latest/download/Work.Buddy_0.1.0_aarch64.dmg"
+            >Download for Mac</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <h1>Your work moves you forward.</h1>
+          <p class="lede">
+            Work Buddy quietly tracks your focused work and moves your hiker
+            forward.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn large"
+              data-download="label"
+              href="https://github.com/newyork-anthonyng/work-buddy-releases/releases/latest/download/Work.Buddy_0.1.0_aarch64.dmg"
+              >Download for Mac</a
+            >
+            <p class="fine">
+              Early access · <span data-macos>macOS 13 Ventura or later</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="stage">
+        <div class="wrap">
+          <div class="stage-well">
+            <img
+              class="pixel"
+              data-loop-anim
+              src="/animations/work/00.png"
+              alt="Hiker walking"
+              width="192"
+              height="192"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section id="how">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>How it works</h2>
+            <p>Three steps. Then you work.</p>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <p class="step-num">1</p>
+              <h3>Choose your rhythm</h3>
+              <p>
+                Set work and break lengths. Defaults are 25 minutes on, 5 off,
+                four sessions a day.
+              </p>
+            </article>
+            <article class="step">
+              <p class="step-num">2</p>
+              <h3>Do your work</h3>
+              <p>
+                Work Buddy hides and quietly tracks focus. Distractions are
+                noted, not interrupted.
+              </p>
+            </article>
+            <article class="step">
+              <p class="step-num">3</p>
+              <h3>Make progress</h3>
+              <p>
+                Your hiker walks while you stay with it, rests on breaks, and
+                camps when the day is done.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="wrap faq-layout">
+          <div class="faq-head">
+            <h2>FAQ</h2>
+          </div>
+          <div>
+            <details class="faq-item" open>
+              <summary>Does Work Buddy record my screen?</summary>
+              <p>No. It never captures screen contents.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Does it record what I type?</summary>
+              <p>No. Keystrokes are not recorded.</p>
+            </details>
+            <details class="faq-item">
+              <summary>How does eye tracking work?</summary>
+              <p>
+                Optional. The camera tells if you are at the screen. Video is
+                processed on this Mac and is not saved.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>What do you track?</summary>
+              <p>
+                Camera video is processed on this Mac and is not saved. The
+                names of apps you use are stored on this Mac — not window
+                titles, screen contents, or keystrokes. Anonymous session start
+                and complete events are sent to PostHog. Goals, the names of
+                apps you use, and camera video are not sent.
+              </p>
+              <p><a href="/privacy.html">Privacy policy</a></p>
+            </details>
+            <details class="faq-item">
+              <summary>What happens when I get distracted?</summary>
+              <p>
+                Work Buddy stays quiet. Distractions are tracked for the session
+                summary.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>What macOS versions are supported?</summary>
+              <p>
+                <span data-macos>macOS 13 Ventura or later</span>.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p class="legal">© 2026 Work Buddy</p>
+        <nav>
+          <a href="#how">How it works</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="#faq">FAQ</a>
+          <a data-email="text" href="mailto:newyork.anthonyng@gmail.com"
+            >newyork.anthonyng@gmail.com</a
+          >
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
