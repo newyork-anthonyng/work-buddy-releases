@@ -4,4 +4,5 @@ export const site = {
     "https://github.com/newyork-anthonyng/work-buddy-releases/releases/latest/download/Work.Buddy_0.1.0_aarch64.dmg",
   supportEmail: "newyork.anthonyng@gmail.com",
   macos: "macOS 13 Ventura or later",
+  demoVideoId: "Tbfs3YRwYrY",
 };

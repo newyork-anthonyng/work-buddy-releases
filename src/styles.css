@@ -228,6 +228,25 @@ a {
   image-rendering: pixelated;
 }
 
+.demo-well {
+  background: var(--soft);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.demo-frame {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.demo-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 section {
   padding: 72px 0;
 }

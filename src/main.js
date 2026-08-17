@@ -52,6 +52,16 @@ function wireDownloads() {
   });
 }
 
+function wireDemoVideo() {
+  if (!site.demoVideoId) return;
+  document.querySelectorAll("[data-demo-video]").forEach((el) => {
+    el.setAttribute(
+      "src",
+      `https://www.youtube-nocookie.com/embed/${site.demoVideoId}`,
+    );
+  });
+}
+
 function initNav() {
   const toggle = document.querySelector("[data-nav-toggle]");
   const panel = document.querySelector("[data-nav-panel]");
@@ -124,6 +134,7 @@ function initFaq() {
 }
 
 wireDownloads();
+wireDemoVideo();
 initNav();
 initLoop();
 initFaq();
